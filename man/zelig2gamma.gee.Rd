@@ -1,7 +1,8 @@
 \name{zelig2gamma.gee}
 \alias{zelig2gamma.gee}
 \title{Interface between the Zelig Model gamma...}
-\usage{zelig2gamma.gee(formula, ..., data)}
+\usage{zelig2gamma.gee(formula, id, robust, ..., R, corstr="independence",
+    data)}
 \description{Interface between the Zelig Model gamma.gee and 
 the Pre-existing Model-fitting Method}
 \value{a list specifying '.function'}
