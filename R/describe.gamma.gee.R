@@ -4,7 +4,8 @@
 #' @export
 describe.gamma.gee <- function(...) {
   list(
-       authors = "",
-       text = ""
+       authors = "Patrick Lam",
+       text = "General Estimating Equation for Gamma Regression",
+       year = 2011
        )
 }

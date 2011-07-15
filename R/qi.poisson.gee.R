@@ -8,9 +8,4 @@
 #' @return a list of key-value pairs specifying pairing titles of quantities of interest
 #'         with their simulations
 #' @export
-qi.poisson.gee <- function(obj, x=NULL, x1=NULL, y=NULL, num=1000, param=NULL) {
-
-  list(
-       "Expected Value: E(Y|X)" = NA
-       )
-}
+qi.poisson.gee <- qi.gamma.gee

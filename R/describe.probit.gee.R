@@ -4,7 +4,8 @@
 #' @export
 describe.probit.gee <- function(...) {
   list(
-       authors = "",
-       text = ""
+       authors = "Patrick Lam",
+       text = "General Estimating Equation for Poisson Regression",
+       year = 2011
        )
 }

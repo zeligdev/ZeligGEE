@@ -10,7 +10,27 @@
 #' @export
 qi.logit.gee <- function(obj, x=NULL, x1=NULL, y=NULL, num=1000, param=NULL) {
 
+  coef <- coef(param)
+  inverse <- linkinv(param)
+
+  eta1 <- coef %*% t(x)
+  ev1 <- theta1 <- matrix(inverse(eta1), nrow=num)
+
+  # default to NA
+  rr <- ev2 <- fd <- NA
+
+  if (!is.null(x1)) {
+    eta2 <- coef %*% t(x1)
+    ev2 <- theta1 <- matrix(inverse(eta2), nrow=num)
+
+    fd <- ev2 - ev1
+    rr <- ev2/ev1
+  }
+
   list(
-       "Expected Value: E(Y|X)" = NA
+       "Expected Values (for x): E(Y|X)"   = ev1,
+       "Expected Values (for x1): E(Y|X1)" = ev2,
+       "First Differences: E(Y|X1) - E(Y|X)" = fd,
+       "Risk Ratios: E(Y|X1)/E(Y|X)" = rr
        )
 }

@@ -1,7 +1,8 @@
 \name{zelig2logit.gee}
 \alias{zelig2logit.gee}
 \title{Interface between the Zelig Model logit...}
-\usage{zelig2logit.gee(formula, ..., data)}
+\usage{zelig2logit.gee(formula, id, robust, ..., R, corstr="independence",
+    data)}
 \description{Interface between the Zelig Model logit.gee and 
 the Pre-existing Model-fitting Method}
 \value{a list specifying '.function'}

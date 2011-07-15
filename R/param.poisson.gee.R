@@ -6,8 +6,16 @@
 #' @return a list specifying link, link-inverse, random samples, and ancillary parameters
 #' @export
 param.poisson.gee <- function(obj, num=1000, ...) {
+
+  # Extract means to compute maximum likelihood
+  mu <- coef(obj)
+
+  # Extract covariance matrix to compute maximum likelihood
+  Sigma <- vcov(obj)
+
+  #
   list(
-       coef = NULL,
-       linkinv = NULL
+       coef = mvrnorm(num, mu, Sigma),
+       fam = Gamma()
        )
 }

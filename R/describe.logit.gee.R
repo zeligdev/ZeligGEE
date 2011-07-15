@@ -4,7 +4,8 @@
 #' @export
 describe.logit.gee <- function(...) {
   list(
-       authors = "",
-       text = ""
+       authors = "Patrick Lam",
+       text = "General Estimating Equation for Logistic Regression",
+       year = 2011
        )
 }

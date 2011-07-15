@@ -5,10 +5,28 @@
 #' @param data a data.frame 
 #' @return a list specifying '.function'
 #' @export
-zelig2logit.gee <- function (formula, ..., data) {
+zelig2logit.gee <- function (formula, id, robust, ..., R, corstr = "independence", data) {
+
+  if (corstr == "fixed" && is.null(R))
+    stop("R must be defined")
+
+  # if id is a valid column-name in data, then we just need to extract the
+  # column and re-order the data.frame and cluster information
+  if (is.character(id) && length(id) == 1 && id %in% colnames(data)) {
+    id <- data[, id]
+    data <- data[order(id), ]
+    id <- sort(id)
+  }
+
   list(
-       .function = "",
+       .function = "gee",
+       .hook = "robust.hook",
+
        formula = formula,
-       data = data
+       id = id,
+       corstr = corstr,
+       family  = binomial(link="logit"),
+       data = data,
+       ...
        )
 }

@@ -1,0 +1,5 @@
+logit.gee          GEE logistic regression
+gamma.gee          GEE gamma regression
+normal.gee         GEE normal regression
+poisson.gee        GEE poisson regression
+probit.gee         GEE probit regression

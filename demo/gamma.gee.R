@@ -1,18 +1,23 @@
-library(gee.zelig)
+library(Zelig)
+#####  Example 1: Basic Example #####
 
+# Attach sample data and variable names:  
 data(coalition)
 
-cluster <- c(rep(c(1:62),5),rep(c(63),4))
-coalition$cluster <- cluster
+#  Variable identifying clusters
+coalition$cluster <- c(rep(c(1:62),5),rep(c(63),4))
 
-z.out <- zelig(duration ~ fract + numst2, 
-               id = "cluster",
-               model = "gamma.gee",
-               data = coalition,
-               corstr="exchangeable"
-               )
+# Sorting by cluster
+sorted.coalition <- coalition[order(coalition$cluster),]
 
+# Estimate model and present a summary:
+user.prompt()
+z.out <- zelig(duration ~ fract + numst2, model = "gamma.gee", id = "cluster", data = sorted.coalition, robust=TRUE, corstr="exchangeable")
+user.prompt()
 summary(z.out)
+
+vcov(z.out)
+q()
 
 #  Setting the explanatory variables at their default values
 #  (mode for factor variables and mean for non-factor variables),
@@ -25,7 +30,6 @@ x.high <- setx(z.out, numst2 = 1)
 # Simulate quantities of interest
 user.prompt()
 s.out <- sim(z.out, x = x.low, x1 = x.high)
-
 user.prompt()
 summary(s.out)
 

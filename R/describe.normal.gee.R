@@ -4,7 +4,8 @@
 #' @export
 describe.normal.gee <- function(...) {
   list(
-       authors = "",
-       text = ""
+       authors = "Patrick Lam",
+       text = "General Estimating Equation for Normal Regression",
+       year = 2011
        )
 }
