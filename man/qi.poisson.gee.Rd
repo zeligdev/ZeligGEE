@@ -1,7 +1,6 @@
 \name{qi.poisson.gee}
 \alias{qi.poisson.gee}
 \title{Compute Quantities of Interest for the Zelig Model poisson...}
-\usage{qi.poisson.gee(obj, x, x1, y, num=1000, param)}
 \description{Compute Quantities of Interest for the Zelig Model poisson.gee}
 \value{a list of key-value pairs specifying pairing titles of quantities of interest
 with their simulations}

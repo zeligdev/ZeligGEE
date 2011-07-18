@@ -1,5 +1,10 @@
-#' Plot sim
+#' Plot Simualted Quantities of Interest for GEE Zelig Models
+#' @usage \method{plot}{sim.gamma.gee}(x, ...)
+#' @param x a simulated GEE object containing simulations of quantities of
+#'   interest
+#' @param ... ignored parameters
 #' @S3method plot sim.gamma.gee
+#' @author Matt Owen \email{mowen@@iq.harvard.edu}
 plot.sim.gamma.gee <- function (x, ...) {
 
   # store device settings
@@ -47,15 +52,30 @@ plot.sim.gamma.gee <- function (x, ...) {
   par(original.par)
 }
 
-#' Plot sim
+#' Plot Simualted Quantities of Interest for GEE Zelig Models
+#' @usage \method{plot}{sim.normal.gee}(x, ...)
+#' @param x a simulated GEE object containing simulations of quantities of
+#'   interest
+#' @param ... ignored parameters
+#' @author Matt Owen \email{mowen@@iq.harvard.edu}
 #' @S3method plot sim.normal.gee
 plot.sim.normal.gee <- plot.sim.gamma.gee
 
-#' Plot sim
+#' Plot Simualted Quantities of Interest for GEE Zelig Models
+#' @usage \method{plot}{sim.poisson.gee}(x, ...)
+#' @param x a simulated GEE object containing simulations of quantities of
+#'   interest
+#' @param ... ignored parameters
+#' @author Matt Owen \email{mowen@@iq.harvard.edu}
 #' @S3method plot sim.poisson.gee
 plot.sim.poisson.gee <- plot.sim.gamma.gee
 
-#' Plot sim
+#' Plot Simualted Quantities of Interest for GEE Zelig Models
+#' @usage \method{plot}{sim.logit.gee}(x, ...)
+#' @param x a simulated GEE object containing simulations of quantities of
+#'   interest
+#' @param ... ignored parameters
+#' @author Matt Owen \email{mowen@@iq.harvard.edu}
 #' @S3method plot sim.logit.gee
 plot.sim.logit.gee <- function (x, ...) {
 
@@ -105,15 +125,23 @@ plot.sim.logit.gee <- function (x, ...) {
   par(original.par)
 }
 
-#' Plot sim
+#' Plot Simualted Quantities of Interest for GEE Zelig Models
+#' @usage \method{plot}{sim.probit.gee}(x, ...)
+#' @param x a simulated GEE object containing simulations of quantities of
+#'   interest
+#' @param ... ignored parameters
+#' @author Matt Owen \email{mowen@@iq.harvard.edu}
 #' @S3method plot sim.probit.gee
 plot.sim.probit.gee <- plot.sim.logit.gee
 
+#' Plot Density Graphs for GEE Quantities of Interest
+#' @param x a vector containing quantities of interest
+#' @param main the main title of the plot
+#' @param col the color of the line-plot
 .plot.density <- function (x, main, col) {
   if (all(is.na(x)))
     return()
 
   density <- density(x)
   plot(density(x), main = main, col = col)
-
 }

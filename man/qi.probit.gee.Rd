@@ -1,7 +1,6 @@
 \name{qi.probit.gee}
 \alias{qi.probit.gee}
 \title{Compute Quantities of Interest for the Zelig Model probit...}
-\usage{qi.probit.gee(obj, x, x1, y, num=1000, param)}
 \description{Compute Quantities of Interest for the Zelig Model probit.gee}
 \value{a list of key-value pairs specifying pairing titles of quantities of interest
 with their simulations}

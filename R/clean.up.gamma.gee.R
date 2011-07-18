@@ -1,7 +1,12 @@
 #' Remove Negative Simulations from Gamma GEE Parameter Simulations
-#' @param obj
-#' @param x
-#' @param x1
+#' @param object a \code{zelig} object
+#' @param x a \code{setx} object
+#' @param x1 a \code{setx} object
+#' @param bootstrap a logical specifying whether the model is using a boot function
+#' @param bootfn the boot function
+#' @param data a data.frame used to simulated parameters
+#' @param param the original \code{param} object
+#' @param num an integer specifying the number of simulations to produce
 clean.up.gamma.gee <- function(object, x, x1=NULL,
                             bootstrap = FALSE, bootfn = NULL,
                             data = NULL,
@@ -38,8 +43,8 @@ clean.up.gamma.gee <- function(object, x, x1=NULL,
               while(sum.neg > 0){
                       if(!bootstrap)
                               new.coef <- matrix(mvrnorm(sum.neg, mu = coef(object), Sigma = vcov(object)), nrow=sum.neg)
-			else
-				new.coef <- matrix(boot(data, bootfn, R = sum.neg, object = object)$t, nrow=sum.neg)
+			#else
+			#	new.coef <- matrix(boot(data, bootfn, R = sum.neg, object = object)$t, nrow=sum.neg)
 				
 			new.coef <- good.params(par=new.coef, x=x, x1=x1)
 			coef <- rbind(coef, new.coef)	

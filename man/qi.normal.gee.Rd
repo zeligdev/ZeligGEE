@@ -1,7 +1,6 @@
 \name{qi.normal.gee}
 \alias{qi.normal.gee}
 \title{Compute Quantities of Interest for the Zelig Model normal...}
-\usage{qi.normal.gee(obj, x, x1, y, num=1000, param)}
 \description{Compute Quantities of Interest for the Zelig Model normal.gee}
 \value{a list of key-value pairs specifying pairing titles of quantities of interest
 with their simulations}
