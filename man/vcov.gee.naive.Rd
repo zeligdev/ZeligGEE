@@ -1,7 +1,7 @@
 \name{vcov.gee.naive}
 \alias{vcov.gee.naive}
 \title{Covariance Matrix for Naive GEE...}
-\usage{vcov.gee.naive(object, ...)}
+\usage{\method{vcov}{gee.naive}(object, ...)}
 \description{Covariance Matrix for Naive GEE}
 \value{the naive variance-covariance matrix}
 \author{Skyler}
