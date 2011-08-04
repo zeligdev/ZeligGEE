@@ -4,7 +4,7 @@
 #'   Package: \tab gee.zelig\cr
 #'   Version: \tab 0.1\cr
 #'   Date: \tab 2011-04-25\cr
-#'   Depends: Zelig
+#'   Depends: Zelig (>= 4.0-4), gee
 #'   License: \tab GPL version 2 or newer\cr
 #' }
 #'
