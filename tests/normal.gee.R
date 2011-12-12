@@ -1,4 +1,4 @@
-library(gee.zelig)
+library(ZeligGEE)
 
 data(macro)
 

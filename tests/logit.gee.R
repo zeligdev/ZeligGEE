@@ -1,4 +1,4 @@
-library(gee.zelig)
+library(ZeligGEE)
 
 ##  Attaching the sample turnout dataset:
 data(turnout)

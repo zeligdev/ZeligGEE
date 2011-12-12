@@ -19,7 +19,7 @@
 @
 
 <<loadLibrary, echo=F,results=hide>>=
-library(gee.zelig)
+library(ZeligGEE)
 @ 
 
 \section{\texttt{poisson.gee}: Generalized Estimating Equation for Poisson Regression}
@@ -300,7 +300,7 @@ results from these data, as this dataset includes errors that have since
 been corrected.
 
 \bibliographystyle{plain}
-\bibliography{gee.zelig}
+\bibliography{ZeligGEE}
 
 <<afterpkgs, echo=FALSE>>=
  after<-search()

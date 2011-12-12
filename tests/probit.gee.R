@@ -1,4 +1,4 @@
-library(gee.zelig)
+library(ZeligGEE)
 
 data(turnout)
 turnout$cluster <- rep(c(1:200),10)

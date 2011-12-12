@@ -1,14 +1,14 @@
-Package: gee.zelig
+Package: ZeligGEE
 Maintainer: Matthew Owen <mowen@iq.harvard.edu>
 License: GPL (>=2)
 Title: A Zelig Model
 Author: Patrick Lam
 Description: A Zelig Model
-Version: 0.1
+Version: 0.2
 Packaged: Wed Jul 13 15:09:00 2011
 URL: http://gking.harvard.edu/zelig
 Date: 2011-07-13
-Depends: Zelig (>= 4.0-4), gee
+Depends: Zelig (>= 4.0-6), gee
 Collate: 'clean.up.gamma.gee.R' 'describe.gamma.gee.R'
     'describe.logit.gee.R' 'describe.normal.gee.R'
     'describe.poisson.gee.R' 'describe.probit.gee.R'
