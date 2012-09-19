@@ -7,15 +7,34 @@ Description: A Zelig Model
 Version: 0.2
 Packaged: Wed Jul 13 15:09:00 2011
 URL: http://gking.harvard.edu/zelig
-Date: 2011-07-13
-Depends: Zelig (>= 4.0-6), gee
-Collate: 'clean.up.gamma.gee.R' 'describe.gamma.gee.R'
-    'describe.logit.gee.R' 'describe.normal.gee.R'
-    'describe.poisson.gee.R' 'describe.probit.gee.R'
-    'gee.zelig-package.R' 'param.gamma.gee.R' 'param.logit.gee.R'
-    'param.normal.gee.R' 'param.poisson.gee.R' 'param.probit.gee.R'
-    'plots.R' 'qi.gamma.gee.R' 'qi.logit.gee.R' 'qi.normal.gee.R'
-    'qi.poisson.gee.R' 'qi.probit.gee.R' 'robust.hook.R'
-    'vcov.gee.naive.R' 'vcov.gee.robust.R' 'zelig2gamma.gee.R'
-    'zelig2logit.gee.R' 'zelig2normal.gee.R' 'zelig2poisson.gee.R'
+Date: 2012-09-19
+Depends:
+    Zelig (>= 4.0-6),
+    gee
+Collate:
+    'clean.up.gamma.gee.R'
+    'describe.gamma.gee.R'
+    'describe.logit.gee.R'
+    'describe.normal.gee.R'
+    'describe.poisson.gee.R'
+    'describe.probit.gee.R'
+    'gee.zelig-package.R'
+    'param.gamma.gee.R'
+    'param.logit.gee.R'
+    'param.normal.gee.R'
+    'param.poisson.gee.R'
+    'param.probit.gee.R'
+    'plots.R'
+    'qi.gamma.gee.R'
+    'qi.logit.gee.R'
+    'qi.normal.gee.R'
+    'qi.poisson.gee.R'
+    'qi.probit.gee.R'
+    'robust.hook.R'
+    'vcov.gee.naive.R'
+    'vcov.gee.robust.R'
+    'zelig2gamma.gee.R'
+    'zelig2logit.gee.R'
+    'zelig2normal.gee.R'
+    'zelig2poisson.gee.R'
     'zelig2probit.gee.R'

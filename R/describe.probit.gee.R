@@ -1,7 +1,9 @@
-#' Describe the probit.gee Zelig Model
+#' Describe the \code{probit.gee} model to Zelig
+#' @usage \method{describe}{probit.gee}(...)
+#' @S3method describe probit.gee
 #' @param ... ignored parameters
-#' @return a list specifying author, title, etc. information
-#' @export
+#' @return a list of important information
+#' @author Patrick Lam
 describe.probit.gee <- function(...) {
   list(
        authors = "Patrick Lam",

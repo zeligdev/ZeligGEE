@@ -1,7 +1,19 @@
 \name{describe.probit.gee}
 \alias{describe.probit.gee}
-\title{Describe the probit...}
-\usage{describe.probit.gee(...)}
-\description{Describe the probit.gee Zelig Model}
-\value{a list specifying author, title, etc. information}
-\arguments{\item{...}{ignored parameters}}
+\title{Describe the \code{probit.gee} model to Zelig}
+\usage{
+  \method{describe}{probit.gee}(...)
+}
+\arguments{
+  \item{...}{ignored parameters}
+}
+\value{
+  a list of important information
+}
+\description{
+  Describe the \code{probit.gee} model to Zelig
+}
+\author{
+  Patrick Lam
+}
+

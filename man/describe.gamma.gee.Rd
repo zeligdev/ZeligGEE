@@ -1,7 +1,19 @@
 \name{describe.gamma.gee}
 \alias{describe.gamma.gee}
-\title{Describe the gamma...}
-\usage{describe.gamma.gee(...)}
-\description{Describe the gamma.gee Zelig Model}
-\value{a list specifying author, title, etc. information}
-\arguments{\item{...}{ignored parameters}}
+\title{Describe the \code{gamma.gee} model to Zelig}
+\usage{
+  \method{describe}{gamma.gee}(...)
+}
+\arguments{
+  \item{...}{ignored parameters}
+}
+\value{
+  a list of important information
+}
+\description{
+  Describe the \code{gamma.gee} model to Zelig
+}
+\author{
+  Patrick Lam
+}
+

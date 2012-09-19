@@ -1,7 +1,9 @@
-#' Describe the gamma.gee Zelig Model
+#' Describe the \code{gamma.gee} model to Zelig
+#' @usage \method{describe}{gamma.gee}(...)
+#' @S3method describe gamma.gee
 #' @param ... ignored parameters
-#' @return a list specifying author, title, etc. information
-#' @export
+#' @return a list of important information
+#' @author Patrick Lam
 describe.gamma.gee <- function(...) {
   list(
        authors = "Patrick Lam",

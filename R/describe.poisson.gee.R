@@ -1,7 +1,9 @@
-#' Describe the poisson.gee Zelig Model
+#' Describe the \code{poisson.gee} model to Zelig
+#' @usage \method{describe}{poisson.gee}(...)
+#' @S3method describe poisson.gee
 #' @param ... ignored parameters
-#' @return a list specifying author, title, etc. information
-#' @export
+#' @return a list of important information
+#' @author Patrick Lam
 describe.poisson.gee <- function(...) {
   list(
        authors = "Patrick Lam",
