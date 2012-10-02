@@ -11,6 +11,7 @@
 #' @return a list of key-value pairs specifying pairing titles of quantities of
 #' interest with their simulations
 #' @author Matt Owen \email{mowen@@iq.harvard.edu}
+#' @export
 qi.gamma.gee <- function(obj, x=NULL, x1=NULL, y=NULL, num=1000, param=NULL) {
 
   coef <- coef(param)

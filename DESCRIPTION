@@ -38,3 +38,4 @@ Collate:
     'zelig2normal.gee.R'
     'zelig2poisson.gee.R'
     'zelig2probit.gee.R'
+    'common-methods.R'

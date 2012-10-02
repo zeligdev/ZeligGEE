@@ -27,15 +27,15 @@ zelig2gamma.gee <- function (formula, id, robust, ..., R, corstr = "independence
   }
 
   list(
-       .function = "gee",
-       .hook = "robust.hook",
-       .post = "clean.up.gamma.gee",
+    .function = "gee",
+    .hook = "robust.hook",
+    .post = "clean.up.gamma.gee",
 
-       formula = formula,
-       id = id,
-       corstr = corstr,
-       family  = Gamma,
-       data = data,
-       ...
-       )
+    formula = formula,
+    id = id,
+    corstr = corstr,
+    family  = Gamma,
+    data = data,
+    ...
+    )
 }
